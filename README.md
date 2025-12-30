@@ -81,23 +81,23 @@ Once the application is running, follow the on-screen prompts to manage your tod
 Here are some screenshots demonstrating the application's functionality:
 
 ### Initial Run
-![Initial Run](image/initial%20run.png)
+![Initial Run](Images/intial%20run.PNG)
 
 ### Add a Task
-![Add Task](image/task%20add.png)
+![Add Task](Images/task%20add.PNG)
 
 ### View Tasks
-![View Tasks](image/view%20task.png)
+![View Tasks](Images/view%20task.PNG)
 
 ### Update a Task
-![Update Task](image/update%20task.png)
+![Update Task](Images/update%20task.PNG)
 
 ### Mark Task as Complete
-![Mark Task as Complete](image/task%20complete.png)
+![Mark Task as Complete](Images/task%20complete.PNG)
 
 ### Delete a Task
-![Delete Task](image/delete%20task.png)
+![Delete Task](Images/delete%20task.PNG)
 
 ### Exiting the Application
-![Exiting Application](image/exist.png)
+![Exiting Application](Images/exist.PNG)
 

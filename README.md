@@ -19,10 +19,9 @@ To run this application, you need:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/Console-Based-Todo-App.git
+    git clone https://github.com/Muhammad-Rehan/Todo-In-Memory-Python-Console-App.git
     cd Console-Based-Todo-App
     ```
-    (Note: Replace `https://github.com/your-username/Console-Based-Todo-App.git` with the actual repository URL if known, or adjust the cloning instruction as needed for your setup.)
 
 2.  **Create and Activate Virtual Environment:**
     It is highly recommended to use a virtual environment. This project includes a `venv` directory, and you can create and activate it as follows:
@@ -82,22 +81,22 @@ Once the application is running, follow the on-screen prompts to manage your tod
 Here are some screenshots demonstrating the application's functionality:
 
 ### Initial Run
-![Initial Run](image/initial run.png)
+![Initial Run](image/initial%20run.png)
 
 ### Add a Task
-![Add Task](image/task add.png)
+![Add Task](image/task%20add.png)
 
 ### View Tasks
-![View Tasks](image/view task.png)
+![View Tasks](image/view%20task.png)
 
 ### Update a Task
-![Update Task](image/update task.png)
+![Update Task](image/update%20task.png)
 
 ### Mark Task as Complete
-![Mark Task as Complete](image/task complete.png)
+![Mark Task as Complete](image/task%20complete.png)
 
 ### Delete a Task
-![Delete Task](image/delete task.png)
+![Delete Task](image/delete%20task.png)
 
 ### Exiting the Application
 ![Exiting Application](image/exist.png)

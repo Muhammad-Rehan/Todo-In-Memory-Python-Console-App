@@ -1,55 +1,42 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+- Version change: 1.0.0 → 1.1.0
+- Modified principles: [PRINCIPLE_1_NAME] → "Code Quality", [PRINCIPLE_2_NAME] → "Testing & Correctness", [PRINCIPLE_3_NAME] → "User Experience Consistency", [PRINCIPLE_4_NAME] → "Performance & Efficiency", [PRINCIPLE_5_NAME] → "In-Memory Constraint"
+- Added sections: None
+- Removed sections: None
+- Templates requiring updates: ⚠ pending (templates/plan-template.md, templates/spec-template.md, templates/tasks-template.md)
+- Follow-up TODOs: [RATIFICATION_DATE] needs to be set to actual date
+-->
+
+# Todo In-Memory Python Console App Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Code Quality
+Code must follow clean, readable, and modular Python design. Each feature (Add, Delete, Update, View, Mark Complete) must be clearly separated. Naming conventions must be explicit and self-explanatory. No unused code, dead logic, or unnecessary abstractions.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Testing & Correctness
+Application behavior must be logically verifiable through usage scenarios. All commands must handle invalid input gracefully. Edge cases (empty list, invalid index, duplicate tasks) must be handled. The application must not crash under any valid or invalid user input.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### User Experience Consistency
+Command-line interaction must be simple and predictable. Prompts, messages, and outputs must follow a consistent format. User should always understand: What action is expected, What action was performed, The current state of the todo list.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Performance & Efficiency
+All operations must execute efficiently in memory. No unnecessary loops or repeated computations. Performance must remain acceptable as the task list grows. Startup and command execution must feel instant to the user.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### In-Memory Constraint
+All data must exist only during runtime. No persistence to files, databases, or external services.
 
-### [PRINCIPLE_6_NAME]
+## Additional Constraints
 
+The application must be implemented in Python with a console-based interface. The code should be modular with clear separation of concerns between the user interface, business logic, and data management layers. The application should follow Python best practices and PEP 8 style guidelines.
 
-[PRINCIPLE__DESCRIPTION]
+## Development Workflow
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+All code changes must be tested manually before submission. Each feature should be implemented as a separate function or method with clear input/output contracts. Error handling should be comprehensive and provide meaningful feedback to users. Code reviews should focus on adherence to the principles outlined in this constitution.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution serves as the guiding document for all development decisions related to the Todo In-Memory Python Console App. All code contributions must comply with these principles. Amendments to this constitution require explicit approval and documentation of the changes and their rationale.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.1.0 | **Ratified**: TODO(RATIFICATION_DATE) | **Last Amended**: 2025-12-26

@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "todo-app"
+version = "0.1.0"
+description = "A command-line todo application written in Python that allows users to manage a list of tasks entirely in memory during program execution."
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [
+    {name = "Developer", email = "dev@example.com"}
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.0",
+]

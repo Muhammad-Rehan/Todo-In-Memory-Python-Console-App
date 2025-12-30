@@ -1,0 +1,5 @@
+# Requirements for Todo In-Memory Python Console App
+# Python version requirement: 3.13+
+# Package manager: UV
+
+# No external dependencies - uses only standard library
